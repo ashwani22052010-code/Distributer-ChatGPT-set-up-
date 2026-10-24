@@ -39,7 +39,7 @@ jobs:
               only = os.environ.get("ONLY", "").strip()
               if only:
                   sel = [f for f in allf if os.path.basename(f)[:-4] == only]
-          else:  # push: sirf nayi/badli hui scripts
+          else:
               try:
                   out = subprocess.check_output(["git", "diff", "--name-only", "--diff-filter=AM",
                                                  os.environ["BEFORE"], "HEAD", "--", "scripts"], text=True).split("\n")
@@ -80,7 +80,7 @@ jobs:
           pattern: video-*
           merge-multiple: true
           
-      - name: Draft release (sirf aapko dikhega)
+      - name: Draft release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -92,24 +92,35 @@ jobs:
 
       - name: Send Video Download Link to Editor App
         run: |
-          shopt -s nullglob
-          for video in videos/*.mp4; do
-            FILENAME=$(basename "$video")
-            JOB_ID="${FILENAME%.*}" 
-            
-            if [[ "$JOB_ID" == job_* ]]; then
-              echo "Uploading $FILENAME to GoFile (Ultra Fast)..."
+          python3 - <<'EOF'
+          import os, glob, json, urllib.request, subprocess
+          
+          videos = glob.glob("videos/job_*.mp4")
+          if not videos:
+              print("Koi nayi editor video nahi mili!")
+              exit(0)
               
-              # GoFile ka sabse fast server find karna
-              SERVER=$(curl -s https://api.gofile.io/servers | jq -r '.data.servers[0].name')
+          for vid in videos:
+              job_id = os.path.basename(vid).split(".")[0]
+              print(f"Uploading {vid} for Editor App...")
               
-              # Video upload karna aur direct link nikalna
-              LINK=$(curl -s -F file=@"$video" "https://$SERVER.gofile.io/contents/uploadfile" | jq -r '.data.downloadPage')
-              
-              echo "Download Link Generated: $LINK"
-              
-              # Firebase me bhejna
-              curl -X PUT -d '"'"$LINK"'"' "https://ashwani-chatgpt-default-rtdb.firebaseio.com/editorJobs/$JOB_ID/downloadUrl.json"
-            fi
-          done
+              try:
+                  # Super-fast server par upload
+                  cmd = ["curl", "-s", "-F", f"file=@{vid}", "https://tmpfiles.org/api/v1/upload"]
+                  out = subprocess.check_output(cmd).decode("utf-8")
+                  link = json.loads(out)["data"]["url"]
+                  
+                  # Direct download link generate karna
+                  direct_link = link.replace("tmpfiles.org/", "tmpfiles.org/dl/")
+                  print(f"Link Generated: {direct_link}")
+                  
+                  # Firebase me push karna
+                  fb_url = f"https://ashwani-chatgpt-default-rtdb.firebaseio.com/editorJobs/{job_id}/downloadUrl.json"
+                  req = urllib.request.Request(fb_url, data=json.dumps(direct_link).encode(), method="PUT")
+                  with urllib.request.urlopen(req) as res:
+                      print("✅ Firebase Success:", res.read().decode())
+                      
+              except Exception as e:
+                  print("❌ Error aaya:", e)
+          EOF
           
