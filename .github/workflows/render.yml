@@ -72,8 +72,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    env:
-      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
@@ -81,6 +79,7 @@ jobs:
           path: videos
           pattern: video-*
           merge-multiple: true
+          
       - name: Draft release (sirf aapko dikhega)
         env:
           GH_TOKEN: ${{ github.token }}
@@ -90,32 +89,18 @@ jobs:
             --repo "$GITHUB_REPOSITORY" --draft \
             --title "Videos - run ${{ github.run_number }}" \
             --notes "Rendered 4K videos"
-            
-      - name: YouTube par PRIVATE upload (sirf tab jab 3 secrets set hon)
-        if: ${{ env.YT_REFRESH_TOKEN != '' }}
-        env:
-          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
-          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-        run: python3 upload.py videos scripts
 
       - name: Send Video Download Link to Editor App
         run: |
-          # Check if there are any mp4 files before running the loop
           shopt -s nullglob
           for video in videos/*.mp4; do
             FILENAME=$(basename "$video")
             JOB_ID="${FILENAME%.*}" 
             
-            # Agar file job_ se shuru hoti hai (matlab editor ne banayi hai)
             if [[ "$JOB_ID" == job_* ]]; then
               echo "Uploading $FILENAME for editor..."
-              
-              # Video ko cloud par upload karke link nikalna
               LINK=$(curl -s -H "Max-Days: 3" --upload-file "$video" "https://transfer.sh/$FILENAME")
               echo "Download Link: $LINK"
-              
-              # Firebase me link bhejna (ashwani-chatgpt setup automatically applied)
               curl -X PUT -d '"'"$LINK"'"' "https://ashwani-chatgpt-default-rtdb.firebaseio.com/editorJobs/$JOB_ID/downloadUrl.json"
             fi
           done
