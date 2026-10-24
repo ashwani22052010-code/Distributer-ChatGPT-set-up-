@@ -1,0 +1,5 @@
+# keys=iphone
+# shorts=off
+
+User: hai to tum mujhe ek 
+Gemini: hai to tum mujhe ek 
