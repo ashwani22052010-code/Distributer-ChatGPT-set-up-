@@ -90,10 +90,10 @@ jobs:
             --title "Videos - run ${{ github.run_number }}" \
             --notes "Rendered 4K videos"
 
-      - name: Send Video Download Link to Editor App
-        run: |
+            - name: Send Video Download Link (No Firebase Method)
+              run: 
           python3 - <<'EOF'
-          import os, glob, json, urllib.request, subprocess
+          import os, glob, json, subprocess
           
           videos = glob.glob("videos/job_*.mp4")
           if not videos:
@@ -105,22 +105,24 @@ jobs:
               print(f"Uploading {vid} for Editor App...")
               
               try:
-                  # Super-fast server par upload
                   cmd = ["curl", "-s", "-F", f"file=@{vid}", "https://tmpfiles.org/api/v1/upload"]
                   out = subprocess.check_output(cmd).decode("utf-8")
                   link = json.loads(out)["data"]["url"]
-                  
-                  # Direct download link generate karna
                   direct_link = link.replace("tmpfiles.org/", "tmpfiles.org/dl/")
                   print(f"Link Generated: {direct_link}")
                   
-                  # Firebase me push karna
-                  fb_url = f"https://ashwani-chatgpt-default-rtdb.firebaseio.com/editorJobs/{job_id}/downloadUrl.json"
-                  req = urllib.request.Request(fb_url, data=json.dumps(direct_link).encode(), method="PUT")
-                  with urllib.request.urlopen(req) as res:
-                      print("✅ Firebase Success:", res.read().decode())
+                  # Repo ke andar links.txt me link save karna
+                  with open("links.txt", "a") as f:
+                      f.write(f"{job_id},{direct_link}\n")
                       
               except Exception as e:
                   print("❌ Error aaya:", e)
           EOF
           
+          # GitHub me chupchaap changes save (commit) karna
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action@github.com"
+          git pull origin main || true
+          git add links.txt || true
+          git commit -m "Added video link" || echo "No changes"
+          git push origin HEAD:main
