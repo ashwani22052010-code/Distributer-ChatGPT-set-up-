@@ -98,9 +98,18 @@ jobs:
             JOB_ID="${FILENAME%.*}" 
             
             if [[ "$JOB_ID" == job_* ]]; then
-              echo "Uploading $FILENAME for editor..."
-              LINK=$(curl -s -H "Max-Days: 3" --upload-file "$video" "https://transfer.sh/$FILENAME")
+              echo "Uploading $FILENAME to Pixeldrain for editor..."
+              
+              # Fast upload to Pixeldrain
+              RESPONSE=$(curl -s -T "$video" "https://pixeldrain.com/api/file")
+              
+              # Extract ID from JSON response using Python
+              FILE_ID=$(python3 -c "import sys, json; print(json.load(sys.stdin).get('id', ''))" <<< "$RESPONSE")
+              LINK="https://pixeldrain.com/u/$FILE_ID"
+              
               echo "Download Link: $LINK"
+              
+              # Sending reliable link to Firebase
               curl -X PUT -d '"'"$LINK"'"' "https://ashwani-chatgpt-default-rtdb.firebaseio.com/editorJobs/$JOB_ID/downloadUrl.json"
             fi
           done
