@@ -1,0 +1,99 @@
+name: Render videos
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Sirf ek script render karni ho to naam likho (jaise video1). Khali = sab"
+        required: false
+        default: ""
+      fps:
+        description: "FPS (30 normal, 60 extra smooth but 2x slow)"
+        required: false
+        default: "30"
+  push:
+    paths:
+      - "scripts/**"
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+      count: ${{ steps.m.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: m
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          ONLY: ${{ inputs.only }}
+        run: |
+          python3 - <<'PY'
+          import os, json, subprocess, glob
+          allf = sorted(glob.glob("scripts/*.txt"))
+          sel = allf
+          if os.environ["EVENT"] == "workflow_dispatch":
+              only = os.environ.get("ONLY", "").strip()
+              if only:
+                  sel = [f for f in allf if os.path.basename(f)[:-4] == only]
+          else:  # push: sirf nayi/badli hui scripts
+              try:
+                  out = subprocess.check_output(["git", "diff", "--name-only", "--diff-filter=AM",
+                                                 os.environ["BEFORE"], "HEAD", "--", "scripts"], text=True).split("\n")
+                  sel = [f for f in out if f.endswith(".txt") and os.path.exists(f)]
+              except Exception:
+                  sel = allf
+          names = [os.path.basename(f)[:-4] for f in sel]
+          with open(os.environ["GITHUB_OUTPUT"], "a") as o:
+              o.write("matrix=" + json.dumps(names) + "\n")
+              o.write("count=" + str(len(names)) + "\n")
+          print("Render hone wali scripts:", names)
+          PY
+
+  video:
+    needs: list
+    if: needs.list.outputs.count != '0'
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        script: ${{ fromJson(needs.list.outputs.matrix) }}
+    uses: ./.github/workflows/video.yml
+    with:
+      script: ${{ matrix.script }}
+      fps: ${{ inputs.fps || '30' }}
+
+  publish:
+    needs: video
+    if: ${{ !cancelled() && needs.video.result != 'skipped' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: videos
+          pattern: video-*
+          merge-multiple: true
+      - name: Draft release (sirf aapko dikhega)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls -lh videos
+          gh release create "videos-${{ github.run_number }}" videos/*.mp4 \
+            --repo "$GITHUB_REPOSITORY" --draft \
+            --title "Videos - run ${{ github.run_number }}" \
+            --notes "Rendered 4K videos"
+      - name: YouTube par PRIVATE upload (sirf tab jab 3 secrets set hon)
+        if: ${{ env.YT_REFRESH_TOKEN != '' }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 upload.py videos scripts
