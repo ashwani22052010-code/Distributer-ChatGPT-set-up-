@@ -1,0 +1,7 @@
+# keys=iphone
+# shorts=off
+
+User: hai to tum mujhe ek 
+Gemini: hai to tum mujhe ek naya script 
+User: hai to tum mujhe ek naya 
+Gemini: hai to tum mujhe ek 
