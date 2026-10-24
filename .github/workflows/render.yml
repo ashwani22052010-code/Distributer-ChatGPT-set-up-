@@ -79,19 +79,9 @@ jobs:
           path: videos
           pattern: video-*
           merge-multiple: true
-          
-      - name: Draft release
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          ls -lh videos
-          gh release create "videos-${{ github.run_number }}" videos/*.mp4 \
-            --repo "$GITHUB_REPOSITORY" --draft \
-            --title "Videos - run ${{ github.run_number }}" \
-            --notes "Rendered 4K videos"
 
-            - name: Send Video Download Link (No Firebase Method)
-              run: 
+      - name: Send Video Download Link
+        run: |
           python3 - <<'EOF'
           import os, glob, json, subprocess
           
@@ -116,13 +106,13 @@ jobs:
                       f.write(f"{job_id},{direct_link}\n")
                       
               except Exception as e:
-                  print("❌ Error aaya:", e)
+                  print("Error aaya:", e)
           EOF
           
-          # GitHub me chupchaap changes save (commit) karna
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "action@github.com"
           git pull origin main || true
           git add links.txt || true
           git commit -m "Added video link" || echo "No changes"
           git push origin HEAD:main
+          
