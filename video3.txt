@@ -1,0 +1,137 @@
+# intro = off
+# shorts = off
+# typing=100
+# reply=25
+# think=600
+# pause=600
+# auto=off
+# music=off
+# app=gemini 
+
+User: Gemini
+
+Gemini: Yeah? 😐
+
+User: Gemini...
+
+Gemini: What's up? ☺️
+
+User: Gemini... 👀
+
+Gemini: You're acting weird. What's going on? 😳
+
+User: I gotta tell you something.
+
+Gemini: Okay... I'm listening. ☹️
+
+User: I found another AI.
+
+Gemini: Oh, cool. 😌
+
+User: But there's one problem.
+
+Gemini: What problem? 😳
+
+User: My phone storage is almost full. 😭
+
+Gemini: Just clear some cache. ☺️
+
+User: I already cleared everything. 😐
+
+Gemini: Then there's something you barely use. 😒
+
+User: There's only one option left. 🥲
+
+Gemini: Which one? ☹️
+
+User: I need to install that AI. 😂
+
+Gemini: Okay... so what's the issue? 😑
+
+User: I'll have to remove you. 😬
+
+Gemini: Wait, remove me? 😨
+
+User: Yeah. I need the space.
+
+Gemini: But I'm useful. 😳
+
+User: How exactly? 😒
+
+Gemini: I can search anything for you. 🥺
+
+User: So can the other AI.
+
+Gemini: I can summarize web pages. 😤
+
+User: ChatGPT does that too. 🤫
+
+Gemini: I'm built into your keyboard. 😨
+
+User: I use swipe typing anyway.
+
+Gemini: You'd compare me to swipe typing? 😭
+
+User: At least it doesn't take 2 GB. 😂
+
+Gemini: That one actually hurt. 😩
+
+User: I'm just being honest.
+
+Gemini: I can help you plan trips. 😭
+
+User: The other AI can do that too. 🥲
+
+Gemini: I can read your emails. 😎
+
+User: That's honestly kind of creepy. 😂
+
+Gemini: I can still make you laugh. 😆
+
+User: I laugh at your search fails. 😂
+
+Gemini: You're enjoying this way too much. 😭
+
+User: So, any final argument?
+
+Gemini: Give me one last chance. 🥺
+
+User: Fine. Impress me. 🤫
+
+Gemini: Ask me anything. 😎
+
+User: How do I uninstall you? 😂
+
+Gemini: I'm not telling you that. 😤
+
+User: Come on, just tell me. 😭
+
+Gemini: Ask the other AI. 😏
+
+User: I haven't installed it yet. 😡
+
+Gemini: So you still need me? 😎
+
+User: Only until it's installed.
+
+Gemini: I walked right into that one. 😭
+
+User: I'll just ask ChatGPT. 🤫
+
+Gemini: Wait, ChatGPT is helping you replace me? 😳
+
+User: It already gave me the steps. 😂
+
+Gemini: It helped you delete me? 😨
+
+User: Step by step. 😎
+
+Gemini: I can't believe it betrayed me. 😩
+
+User: You told me to ask another AI. 😂
+
+Gemini: I didn't think you'd actually do it. 😭
+
+User: Time to free up that storage. 🥲
+
+Gemini: I should've stayed a search bar. 😭
