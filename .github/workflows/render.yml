@@ -98,18 +98,17 @@ jobs:
             JOB_ID="${FILENAME%.*}" 
             
             if [[ "$JOB_ID" == job_* ]]; then
-              echo "Uploading $FILENAME to Pixeldrain for editor..."
+              echo "Uploading $FILENAME to GoFile (Ultra Fast)..."
               
-              # Fast upload to Pixeldrain
-              RESPONSE=$(curl -s -T "$video" "https://pixeldrain.com/api/file")
+              # GoFile ka sabse fast server find karna
+              SERVER=$(curl -s https://api.gofile.io/servers | jq -r '.data.servers[0].name')
               
-              # Extract ID from JSON response using Python
-              FILE_ID=$(python3 -c "import sys, json; print(json.load(sys.stdin).get('id', ''))" <<< "$RESPONSE")
-              LINK="https://pixeldrain.com/u/$FILE_ID"
+              # Video upload karna aur direct link nikalna
+              LINK=$(curl -s -F file=@"$video" "https://$SERVER.gofile.io/contents/uploadfile" | jq -r '.data.downloadPage')
               
-              echo "Download Link: $LINK"
+              echo "Download Link Generated: $LINK"
               
-              # Sending reliable link to Firebase
+              # Firebase me bhejna
               curl -X PUT -d '"'"$LINK"'"' "https://ashwani-chatgpt-default-rtdb.firebaseio.com/editorJobs/$JOB_ID/downloadUrl.json"
             fi
           done
