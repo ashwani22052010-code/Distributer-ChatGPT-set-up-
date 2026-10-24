@@ -1,0 +1,5 @@
+# keys=thock
+# shorts=off
+
+User: hai to tum mujhe ek naya script do 
+Gemini: hai to tum mujhe ek naya script do jisme 
