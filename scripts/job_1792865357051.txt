@@ -1,0 +1,7 @@
+# keys=iphone
+# shorts=off
+
+User: hai to tum mujhe ek 
+ChatGPT: hai to tum mujhe 
+User: hai ki 
+ChatGPT: hai to tum 
