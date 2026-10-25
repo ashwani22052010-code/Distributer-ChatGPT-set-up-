@@ -1,0 +1,14 @@
+# intro = off
+# shorts = off
+# typing=100
+# reply=25
+# think=600
+# pause=600
+# auto=on
+# music=off
+# app=gemini
+
+User: hai to tum mujhe ek 
+Gemini: hai to tum mujhe 
+User: hai to tum mujhe ek naya script do jisme 
+Gemini: hai to tum mujhe ek naya 
