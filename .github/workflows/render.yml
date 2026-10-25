@@ -114,9 +114,9 @@ jobs:
           # Git par save karna
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "action@github.com"
-          git pull origin main || true
-          git add links.txt || true
-          git commit -m "Added GitHub Release video link" || echo "No changes"
-          git push origin HEAD:main
-          sh origin HEAD:main
+          git pull || true
+          git add links.txt
+          git commit -m "Added GitHub Release video link" || true
+          git push
+
           
