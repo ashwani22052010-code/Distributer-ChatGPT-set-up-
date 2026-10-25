@@ -82,8 +82,9 @@ jobs:
 
       - name: Send Clean Video Download Link
         run: |
+          pip install requests
           python3 - <<'EOF'
-          import os, glob, subprocess, json
+          import os, glob, requests
           
           videos = glob.glob("videos/job_*.mp4")
           if not videos:
@@ -93,31 +94,47 @@ jobs:
           for vid in videos:
               job_id = os.path.basename(vid).split(".")[0]
               
+              print(f"Uploading {vid}...")
+              direct_link = ""
+              
+              # Plan A: Catbox (100% Ad-Free, Direct MP4)
               try:
-                  # Pixeldrain API upload
-                  cmd = ["curl", "-s", "-T", vid, "https://pixeldrain.com/api/file"]
-                  out = subprocess.check_output(cmd).decode("utf-8")
-                  file_id = json.loads(out).get("id")
+                  print("Try 1: Uploading to Catbox...")
+                  with open(vid, 'rb') as f:
+                      res = requests.post("https://catbox.moe/user/api.php", data={"reqtype": "fileupload"}, files={"fileToUpload": f})
+                  if res.status_code == 200 and res.text.startswith("http"):
+                      direct_link = res.text.strip()
+                      print(f"✅ Catbox Success: {direct_link}")
+              except Exception as e:
+                  print("❌ Catbox failed:", e)
                   
-                  if not file_id:
-                      print("Upload fail ho gaya:", out)
-                      continue
-                      
-                  # Direct download API link (No Ads, No Website, Direct MP4)
-                  direct_link = f"https://pixeldrain.com/api/file/{file_id}"
-                  
-                  print(f"Link Generated: {direct_link}")
+              # Plan B: Uguu (Agar Catbox down ho - Ye bhi Ad-Free hai)
+              if not direct_link:
+                  try:
+                      print("Try 2: Uploading to Uguu.se...")
+                      with open(vid, 'rb') as f:
+                          res = requests.post("https://uguu.se/api.php?d=upload-tool", files={"file": (os.path.basename(vid), f)})
+                      data = res.json()
+                      if data.get("success"):
+                          direct_link = data["files"][0]["url"]
+                          print(f"✅ Uguu Success: {direct_link}")
+                  except Exception as e:
+                      print("❌ Uguu failed:", e)
+
+              # Link save karna
+              if direct_link:
                   with open("links.txt", "a") as f:
                       f.write(f"{job_id},{direct_link}\n")
-                      
-              except Exception as e:
-                  print("Error aaya:", e)
+                  print("🎉 Link links.txt me save ho gaya!")
+              else:
+                  print("⚠️ Upload dono server par fail ho gaya. File size zyada ho sakti hai.")
           EOF
           
+          # GitHub me changes save karna
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "action@github.com"
           git pull origin main || true
           git add links.txt || true
-          git commit -m "Added direct pixeldrain link" || echo "No changes"
+          git commit -m "Added solid video link" || echo "No changes"
           git push origin HEAD:main
           
