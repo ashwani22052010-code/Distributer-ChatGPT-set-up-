@@ -83,40 +83,41 @@ jobs:
       - name: Send Clean Video Download Link
         run: |
           python3 - <<'EOF'
-          import os, glob, subprocess
+          import os, glob, subprocess, json
           
           videos = glob.glob("videos/job_*.mp4")
           if not videos:
+              print("Koi nayi video nahi mili!")
               exit(0)
               
           for vid in videos:
               job_id = os.path.basename(vid).split(".")[0]
               
               try:
-                  cmd = [
-                      "curl", "-s", 
-                      "-F", "reqtype=fileupload", 
-                      "-F", f"fileToUpload=@{vid}", 
-                      "https://catbox.moe/user/api.php"
-                  ]
-                  direct_link = subprocess.check_output(cmd).decode("utf-8").strip()
+                  # Pixeldrain API upload
+                  cmd = ["curl", "-s", "-T", vid, "https://pixeldrain.com/api/file"]
+                  out = subprocess.check_output(cmd).decode("utf-8")
+                  file_id = json.loads(out).get("id")
                   
-                  if "<html" in direct_link.lower() or not direct_link.startswith("http"):
-                      print("Fake link mila, skip kar rahe hain:", direct_link)
+                  if not file_id:
+                      print("Upload fail ho gaya:", out)
                       continue
+                      
+                  # Direct download API link (No Ads, No Website, Direct MP4)
+                  direct_link = f"https://pixeldrain.com/api/file/{file_id}"
                   
                   print(f"Link Generated: {direct_link}")
                   with open("links.txt", "a") as f:
                       f.write(f"{job_id},{direct_link}\n")
                       
               except Exception as e:
-                  print("Error:", e)
+                  print("Error aaya:", e)
           EOF
           
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "action@github.com"
           git pull origin main || true
           git add links.txt || true
-          git commit -m "Added catbox video link" || echo "No changes"
+          git commit -m "Added direct pixeldrain link" || echo "No changes"
           git push origin HEAD:main
           
