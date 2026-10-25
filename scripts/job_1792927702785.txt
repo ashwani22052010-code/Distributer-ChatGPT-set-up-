@@ -1,0 +1,15 @@
+# intro = off
+# shorts = off
+# zoom=1.7
+# typing=123
+# reply=25
+# think=600
+# pause=600
+# auto=on
+# music=on
+# app=chatgpt
+
+User: hai to tum mujhe 
+ChatGPT: hai to tum mujhe 
+User: hai to tum mujhe 
+ChatGPT: hai to tum mujhe 
