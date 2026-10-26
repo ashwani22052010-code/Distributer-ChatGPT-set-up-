@@ -1,0 +1,204 @@
+name: Render one video
+
+on:
+  workflow_call:
+    inputs:
+      script:
+        type: string
+        required: true
+      fps:
+        type: string
+        default: "30"
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    outputs:
+      parts: ${{ steps.p.outputs.parts }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        timeout-minutes: 12
+        env:
+          DEBIAN_FRONTEND: noninteractive
+          NEEDRESTART_MODE: a
+          PIP_DEFAULT_TIMEOUT: 120
+        run: |
+          install_ffmpeg() {
+            for i in 1 2 3; do
+              timeout 240 pip install --no-cache-dir imageio-ffmpeg && break
+              echo "pip retry $i"; sleep 5
+            done
+            FF=$(python3 -c "import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())" 2>/dev/null || true)
+            if [ -n "$FF" ]; then
+              chmod +x "$FF" || true
+              sudo ln -sf "$FF" /usr/local/bin/ffmpeg
+            fi
+            if ffmpeg -hide_banner -encoders 2>/dev/null | grep -q libx264; then
+              echo "static ffmpeg ready"
+              return 0
+            fi
+            echo "static ffmpeg nahi mila, apt se try kar rahe hain"
+            sudo rm -f /usr/local/bin/ffmpeg
+            echo 'Acquire::Retries "3"; Acquire::http::Timeout "15";' | sudo tee /etc/apt/apt.conf.d/99net >/dev/null
+            for i in 1 2; do
+              sudo timeout 60 apt-get update -qq \
+                && sudo timeout 150 apt-get install -y --no-install-recommends ffmpeg \
+                && break
+            done
+            command -v ffmpeg
+          }
+          install_ffmpeg
+          for i in 1 2 3; do
+            timeout 300 pip install --no-cache-dir playwright numpy && break
+            sleep 5
+          done
+          for i in 1 2 3; do
+            timeout 300 python3 -m playwright install chromium && break
+            sleep 5
+          done
+          for i in 1 2 3; do
+            timeout 120 pip install --no-cache-dir edge-tts && break
+            sleep 5
+          done
+      - name: Plan (kitne hisse banenge)
+        id: p
+        run: python3 render.py "scripts/${{ inputs.script }}.txt" --plan plan --fps "${{ inputs.fps }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: plan-${{ inputs.script }}
+          path: plan/
+          retention-days: 2
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        part: ${{ fromJson(needs.plan.outputs.parts) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        timeout-minutes: 12
+        env:
+          DEBIAN_FRONTEND: noninteractive
+          NEEDRESTART_MODE: a
+          PIP_DEFAULT_TIMEOUT: 120
+        run: |
+          install_ffmpeg() {
+            for i in 1 2 3; do
+              timeout 240 pip install --no-cache-dir imageio-ffmpeg && break
+              echo "pip retry $i"; sleep 5
+            done
+            FF=$(python3 -c "import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())" 2>/dev/null || true)
+            if [ -n "$FF" ]; then
+              chmod +x "$FF" || true
+              sudo ln -sf "$FF" /usr/local/bin/ffmpeg
+            fi
+            if ffmpeg -hide_banner -encoders 2>/dev/null | grep -q libx264; then
+              echo "static ffmpeg ready"
+              return 0
+            fi
+            echo "static ffmpeg nahi mila, apt se try kar rahe hain"
+            sudo rm -f /usr/local/bin/ffmpeg
+            echo 'Acquire::Retries "3"; Acquire::http::Timeout "15";' | sudo tee /etc/apt/apt.conf.d/99net >/dev/null
+            for i in 1 2; do
+              sudo timeout 60 apt-get update -qq \
+                && sudo timeout 150 apt-get install -y --no-install-recommends ffmpeg \
+                && break
+            done
+            command -v ffmpeg
+          }
+          install_ffmpeg
+          for i in 1 2 3; do
+            timeout 300 pip install --no-cache-dir playwright numpy && break
+            sleep 5
+          done
+          for i in 1 2 3; do
+            timeout 300 python3 -m playwright install chromium && break
+            sleep 5
+          done
+      - uses: actions/download-artifact@v4
+        with:
+          name: plan-${{ inputs.script }}
+          path: plan
+      - name: Render hissa ${{ matrix.part }}
+        run: python3 render.py "scripts/${{ inputs.script }}.txt" --part ${{ matrix.part }} --plan-dir plan --out out --fps "${{ inputs.fps }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ inputs.script }}-${{ matrix.part }}
+          path: out/*.mp4
+          retention-days: 2
+          compression-level: 0
+
+  merge:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        timeout-minutes: 12
+        env:
+          DEBIAN_FRONTEND: noninteractive
+          NEEDRESTART_MODE: a
+          PIP_DEFAULT_TIMEOUT: 120
+        run: |
+          install_ffmpeg() {
+            for i in 1 2 3; do
+              timeout 240 pip install --no-cache-dir imageio-ffmpeg && break
+              echo "pip retry $i"; sleep 5
+            done
+            FF=$(python3 -c "import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())" 2>/dev/null || true)
+            if [ -n "$FF" ]; then
+              chmod +x "$FF" || true
+              sudo ln -sf "$FF" /usr/local/bin/ffmpeg
+            fi
+            if ffmpeg -hide_banner -encoders 2>/dev/null | grep -q libx264; then
+              echo "static ffmpeg ready"
+              return 0
+            fi
+            echo "static ffmpeg nahi mila, apt se try kar rahe hain"
+            sudo rm -f /usr/local/bin/ffmpeg
+            echo 'Acquire::Retries "3"; Acquire::http::Timeout "15";' | sudo tee /etc/apt/apt.conf.d/99net >/dev/null
+            for i in 1 2; do
+              sudo timeout 60 apt-get update -qq \
+                && sudo timeout 150 apt-get install -y --no-install-recommends ffmpeg \
+                && break
+            done
+            command -v ffmpeg
+          }
+          install_ffmpeg
+          for i in 1 2 3; do
+            timeout 300 pip install --no-cache-dir numpy && break
+            sleep 5
+          done
+      - uses: actions/download-artifact@v4
+        with:
+          name: plan-${{ inputs.script }}
+          path: plan
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: part-${{ inputs.script }}-*
+          path: parts
+          merge-multiple: true
+      - name: Jodo + audio
+        run: python3 render.py "scripts/${{ inputs.script }}.txt" --merge --plan-dir plan --parts-dir parts --out out --fps "${{ inputs.fps }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ inputs.script }}
+          path: out/*.mp4
+          retention-days: 7
+          compression-level: 0
