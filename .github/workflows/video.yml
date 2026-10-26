@@ -24,11 +24,15 @@ jobs:
       - name: Install
         env:
           DEBIAN_FRONTEND: noninteractive
+          NEEDRESTART_MODE: a
+          PIP_DEFAULT_TIMEOUT: 100
         run: |
+          sudo apt-get remove -y needrestart || true
           sudo apt-get update -qq
           sudo apt-get install -yq --no-install-recommends ffmpeg fonts-roboto fonts-noto-core fonts-noto-color-emoji
-          pip install --default-timeout=100 playwright numpy
-          playwright install --with-deps chromium
+          pip install playwright numpy
+          playwright install chromium
+          sudo playwright install-deps chromium
       - name: Plan (kitne hisse banenge)
         id: p
         run: python3 render.py "scripts/${{ inputs.script }}.txt" --plan plan --fps "${{ inputs.fps }}"
@@ -54,11 +58,15 @@ jobs:
       - name: Install
         env:
           DEBIAN_FRONTEND: noninteractive
+          NEEDRESTART_MODE: a
+          PIP_DEFAULT_TIMEOUT: 100
         run: |
+          sudo apt-get remove -y needrestart || true
           sudo apt-get update -qq
           sudo apt-get install -yq --no-install-recommends ffmpeg fonts-roboto fonts-noto-core fonts-noto-color-emoji
-          pip install --default-timeout=100 playwright numpy
-          playwright install --with-deps chromium
+          pip install playwright numpy
+          playwright install chromium
+          sudo playwright install-deps chromium
       - uses: actions/download-artifact@v4
         with:
           name: plan-${{ inputs.script }}
@@ -84,10 +92,13 @@ jobs:
       - name: Install
         env:
           DEBIAN_FRONTEND: noninteractive
+          NEEDRESTART_MODE: a
+          PIP_DEFAULT_TIMEOUT: 100
         run: |
+          sudo apt-get remove -y needrestart || true
           sudo apt-get update -qq
           sudo apt-get install -yq --no-install-recommends ffmpeg
-          pip install --default-timeout=100 numpy
+          pip install numpy
       - uses: actions/download-artifact@v4
         with:
           name: plan-${{ inputs.script }}
