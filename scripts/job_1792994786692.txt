@@ -1,0 +1,35 @@
+# end = off
+# intro = off
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=25
+# think=600
+# pause=600
+# auto=on
+# music=off
+# app=chatgpt
+
+User: hey chatgpt... i have an experiment 😈
+
+ChatGPT: what experiment? 🤨
+
+User: i'm gonna type 10,000 zeros 😐
+
+ChatGPT: WHAT?! 😱
+
+User: yeah... right now 💀
+
+ChatGPT: DON'T DO IT 😡
+
+User: too late... here we go 😏
+
+User: 00000000000000000000000000000000000000000000000000 😐
+
+ChatGPT: OKAY... THAT'S FIFTY 💀
+
+User: i'm just warming up 😈
+
+User: 00000000000000000000000000000000000000000000000000 😐
+
+ChatGPT: STOP... MY SYSTEM IS LAGGING 😰
