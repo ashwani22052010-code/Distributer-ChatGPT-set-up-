@@ -1,0 +1,17 @@
+# intro = off
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=25
+# think=600
+# pause=600
+# auto=on
+# music=off
+# app=chatgpt
+
+User: hai to tum 😂
+ChatGPT: hai to r 😭 
+User: hai to 😡 
+ChatGPT: hai to 😱
+
+!end: 🥰Thanks for watching! 🥰 | Chat Roast
