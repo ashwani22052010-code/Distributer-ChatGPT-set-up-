@@ -28,10 +28,11 @@ jobs:
           PIP_DEFAULT_TIMEOUT: 100
         run: |
           sudo apt-get remove -y needrestart || true
+          echo 'Acquire::Retries "3";' | sudo tee /etc/apt/apt.conf.d/80-retries
           sudo apt-get update -qq
           sudo apt-get install -yq --no-install-recommends ffmpeg fonts-roboto fonts-noto-core fonts-noto-color-emoji
-          pip install playwright numpy
-          playwright install --with-deps chromium
+          pip install --no-cache-dir playwright numpy
+          python3 -m playwright install chromium
       - name: Plan (kitne hisse banenge)
         id: p
         run: python3 render.py "scripts/${{ inputs.script }}.txt" --plan plan --fps "${{ inputs.fps }}"
@@ -61,10 +62,11 @@ jobs:
           PIP_DEFAULT_TIMEOUT: 100
         run: |
           sudo apt-get remove -y needrestart || true
+          echo 'Acquire::Retries "3";' | sudo tee /etc/apt/apt.conf.d/80-retries
           sudo apt-get update -qq
           sudo apt-get install -yq --no-install-recommends ffmpeg fonts-roboto fonts-noto-core fonts-noto-color-emoji
-          pip install playwright numpy
-          playwright install --with-deps chromium
+          pip install --no-cache-dir playwright numpy
+          python3 -m playwright install chromium
       - uses: actions/download-artifact@v4
         with:
           name: plan-${{ inputs.script }}
@@ -94,9 +96,10 @@ jobs:
           PIP_DEFAULT_TIMEOUT: 100
         run: |
           sudo apt-get remove -y needrestart || true
+          echo 'Acquire::Retries "3";' | sudo tee /etc/apt/apt.conf.d/80-retries
           sudo apt-get update -qq
           sudo apt-get install -yq --no-install-recommends ffmpeg
-          pip install numpy
+          pip install --no-cache-dir numpy
       - uses: actions/download-artifact@v4
         with:
           name: plan-${{ inputs.script }}
