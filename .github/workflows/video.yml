@@ -28,9 +28,8 @@ jobs:
           PIP_DEFAULT_TIMEOUT: 100
         run: |
           sudo apt-get remove -y needrestart || true
-          echo 'Acquire::Retries "3";' | sudo tee /etc/apt/apt.conf.d/80-retries
           sudo apt-get update -qq
-          sudo apt-get install -yq --no-install-recommends ffmpeg fonts-roboto fonts-noto-core fonts-noto-color-emoji
+          sudo apt-get install -yq --no-install-recommends ffmpeg
           pip install --no-cache-dir playwright numpy
           python3 -m playwright install chromium
       - name: Plan (kitne hisse banenge)
@@ -62,9 +61,8 @@ jobs:
           PIP_DEFAULT_TIMEOUT: 100
         run: |
           sudo apt-get remove -y needrestart || true
-          echo 'Acquire::Retries "3";' | sudo tee /etc/apt/apt.conf.d/80-retries
           sudo apt-get update -qq
-          sudo apt-get install -yq --no-install-recommends ffmpeg fonts-roboto fonts-noto-core fonts-noto-color-emoji
+          sudo apt-get install -yq --no-install-recommends ffmpeg
           pip install --no-cache-dir playwright numpy
           python3 -m playwright install chromium
       - uses: actions/download-artifact@v4
@@ -96,7 +94,6 @@ jobs:
           PIP_DEFAULT_TIMEOUT: 100
         run: |
           sudo apt-get remove -y needrestart || true
-          echo 'Acquire::Retries "3";' | sudo tee /etc/apt/apt.conf.d/80-retries
           sudo apt-get update -qq
           sudo apt-get install -yq --no-install-recommends ffmpeg
           pip install --no-cache-dir numpy
