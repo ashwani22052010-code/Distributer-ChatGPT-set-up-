@@ -1,0 +1,17 @@
+# intro = off
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=25
+# think=600
+# pause=600
+# auto=on
+# music=off
+# app=gemini
+
+User: hai to tum mujhe 
+ChatGPT: hai to tum mujhe 
+User: hai to tum 
+ChatGPT: hai to tum 
+
+!end: Thanks for watching! 🥰 | Chat Roast
