@@ -21,15 +21,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install
+      - name: Install Python Deps & Browser
         env:
-          DEBIAN_FRONTEND: noninteractive
-          NEEDRESTART_MODE: a
-          PIP_DEFAULT_TIMEOUT: 100
+          PIP_DEFAULT_TIMEOUT: 120
         run: |
-          sudo apt-get remove -y needrestart || true
-          sudo apt-get update -qq
-          sudo apt-get install -yq --no-install-recommends ffmpeg
           pip install --no-cache-dir playwright numpy
           python3 -m playwright install chromium
       - name: Plan (kitne hisse banenge)
@@ -54,15 +49,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install
+      - name: Install Python Deps & Browser
         env:
-          DEBIAN_FRONTEND: noninteractive
-          NEEDRESTART_MODE: a
-          PIP_DEFAULT_TIMEOUT: 100
+          PIP_DEFAULT_TIMEOUT: 120
         run: |
-          sudo apt-get remove -y needrestart || true
-          sudo apt-get update -qq
-          sudo apt-get install -yq --no-install-recommends ffmpeg
           pip install --no-cache-dir playwright numpy
           python3 -m playwright install chromium
       - uses: actions/download-artifact@v4
@@ -87,15 +77,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install
+      - name: Install Python Deps
         env:
-          DEBIAN_FRONTEND: noninteractive
-          NEEDRESTART_MODE: a
-          PIP_DEFAULT_TIMEOUT: 100
+          PIP_DEFAULT_TIMEOUT: 120
         run: |
-          sudo apt-get remove -y needrestart || true
-          sudo apt-get update -qq
-          sudo apt-get install -yq --no-install-recommends ffmpeg
           pip install --no-cache-dir numpy
       - uses: actions/download-artifact@v4
         with:
