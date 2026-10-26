@@ -31,8 +31,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -yq --no-install-recommends ffmpeg fonts-roboto fonts-noto-core fonts-noto-color-emoji
           pip install playwright numpy
-          playwright install chromium
-          sudo playwright install-deps chromium
+          playwright install --with-deps chromium
       - name: Plan (kitne hisse banenge)
         id: p
         run: python3 render.py "scripts/${{ inputs.script }}.txt" --plan plan --fps "${{ inputs.fps }}"
@@ -65,8 +64,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -yq --no-install-recommends ffmpeg fonts-roboto fonts-noto-core fonts-noto-color-emoji
           pip install playwright numpy
-          playwright install chromium
-          sudo playwright install-deps chromium
+          playwright install --with-deps chromium
       - uses: actions/download-artifact@v4
         with:
           name: plan-${{ inputs.script }}
