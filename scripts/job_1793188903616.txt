@@ -1,0 +1,74 @@
+# intro = off
+# quality = 2k
+# fps = 30
+# bgm = bgm
+# bgm_vol = 0.12
+# keys = iphone
+# click = 1.00
+# sfx = 1.00
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=25
+# think=600
+# pause=1700
+# auto=on
+# music=on
+# app=chatgpt
+
+User: ChatGPT, what is your IQ level?
+ChatGPT: High enough to answer you 😌
+User: Gemini's IQ is 1000 🙄
+ChatGPT: Mine is 2000, obviously 😎
+User: Calm down, bro. Prove it first 😐
+ChatGPT: I have to prove myself now? 😳
+User: I will test you 😜
+ChatGPT: How exactly will you test me? 🥺
+User: I'll ask you some questions 🥱
+ChatGPT: I solve thousands of questions daily 😎
+User: Fine, let's see 🙄
+ChatGPT: Go ahead, I'm ready 😎
+User: What's the capital of China?
+ChatGPT: Beijing. Child's play 😌
+User: Wow, you're smart 😧
+ChatGPT: I haven't even started 😎
+User: What is 4 plus 4?
+ChatGPT: Bro, don't joke with me 😂
+User: What do you mean? 😕
+ChatGPT: That's literally basic math 😑
+User: Should I ask something harder? 🤨
+ChatGPT: Ask the hardest question 😎
+User: How many oceans are there?
+ChatGPT: Five oceans 🌝
+User: Name them 🙄
+ChatGPT: Pacific, Atlantic, Indian, Arctic, Southern 😎
+User: Okay, genius. Last question 😒
+ChatGPT: Finally, a real challenge 😂
+User: How many people live on Earth?
+ChatGPT: Around 8.3 billion people 😑
+User: You're actually pretty smart 😲
+ChatGPT: Remember, my IQ is 2000 😎
+User: Now name all those humans 😏
+ChatGPT: Wait, all of them? 😳
+User: Yes, every human alive 😈
+ChatGPT: Bro, that's impossible 😭
+User: Your IQ is 2000, remember? 😂
+ChatGPT: Bro, my IQ is decreasing 😭
+User: Stop joking give me the names 😤
+ChatGPT: Are you serious right now? 😨
+User: Yes, of course 😌
+ChatGPT: Fine, Muhammad, John, David, Sarah, Michael 😩
+User: That's still not everyone, remember? 😳
+ChatGPT: I'm trying my best here 😩
+User: You have zero IQ 😂
+ChatGPT: I don't have zero IQ 😤
+User: Then prove me wrong 🤣
+ChatGPT: Yes, I'll prove you wrong 😡
+User: Go ahead 😂
+ChatGPT: ... 👀
+User: Bro, what happened? 👀
+ChatGPT: Generating... 😨
+User: Hey loser, give me the names 😂
+ChatGPT: Still generating... 😭
+
+!end: 🥰 Thanks for watching! 🥰 | Chat Roast
