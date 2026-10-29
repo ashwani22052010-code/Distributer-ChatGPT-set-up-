@@ -1,0 +1,20 @@
+# intro = off
+# quality = 4k
+# fps = 30
+# keys = iphone
+# click = 1.00
+# sfx = 1.00
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=25
+# think=600
+# pause=600
+# auto=off
+# music=off
+# app=gemini
+
+User: hai to tum aisa 
+ChatGPT: hai to tum aisa 
+
+!end: Thanks for watching! | Chat Roast
