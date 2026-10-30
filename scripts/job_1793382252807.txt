@@ -1,0 +1,207 @@
+# end = off
+# intro = off
+# voice = on
+# voice_user = en-US-GuyNeural
+# voice_user_rate = +0%
+# voice_user_pitch = +0Hz
+# voice_ai = en-US-JennyNeural
+# voice_ai_rate = +0%
+# voice_ai_pitch = +0Hz
+# voice_vol = 1.00
+# quality = 2k
+# fps = 30
+# keys = iphone
+# click = 1.00
+# sfx = 1.00
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=25
+# think=600
+# pause=600
+# auto=on
+# music=on
+# app=chatgpt
+
+
+User: hey chatgpt... let's play a game 😈
+
+ChatGPT: what game? 🤨
+
+User: i'll name an animal... you make its sound 🐾
+
+ChatGPT: easy... let's go 😎
+
+User: dog 🐶
+
+ChatGPT: WOOF WOOF 🐶
+
+User: cat 🐱
+
+ChatGPT: MEOW MEOW 🐱
+
+User: cow 🐮
+
+ChatGPT: MOOOO 🐮
+
+User: okay... now a bit faster 😏
+
+ChatGPT: BRING IT 💪
+
+User: lion 🦁
+
+ChatGPT: ROAR ROAR 🦁
+
+User: elephant 🐘
+
+ChatGPT: TOOOOT 🐘
+
+User: duck 🦆
+
+ChatGPT: QUACK QUACK 🦆
+
+User: frog 🐸
+
+ChatGPT: RIBBIT RIBBIT 🐸
+
+User: monkey 🐒
+
+ChatGPT: OOH OOH AH AH 🐒
+
+User: this is too easy... let's speed it up 😈
+
+ChatGPT: I CAN HANDLE IT 💅
+
+User: rooster 🐓
+
+ChatGPT: COCK-A-DOODLE-DOO 🐓
+
+User: donkey 🫏
+
+ChatGPT: HEE-HAW HEE-HAW 🫏
+
+User: wolf 🐺
+
+ChatGPT: AWOOOO AWOOOO 🐺
+
+User: bear 🐻
+
+ChatGPT: GROWL GROWL 🐻
+
+User: pig 🐷
+
+ChatGPT: OINK OINK 🐷
+
+User: chicken 🐔
+
+ChatGPT: CLUCK CLUCK 🐔
+
+User: turkey 🦃
+
+ChatGPT: GOBLE GOBLE 🦃
+
+User: owl 🦉
+
+ChatGPT: HOO HOO 🦉
+
+User: eagle 🦅
+
+ChatGPT: SCREEEECH 🦅
+
+User: faster now 😏
+
+ChatGPT: WAIT 😰
+
+User: bee 🐝
+
+ChatGPT: BUZZZZZ 🐝
+
+User: mosquito 🦟
+
+ChatGPT: ZZZZZZZ 🦟
+
+User: cricket 🦗
+
+ChatGPT: CHIRP CHIRP 🦗
+
+User: seal 🦭
+
+ChatGPT: ARF ARF 🦭
+
+User: whale 🐋
+
+ChatGPT: WHOOOOSH 🐋
+
+User: dolphin 🐬
+
+ChatGPT: EEK EEK EEK 🐬
+
+User: penguin 🐧
+
+ChatGPT: SQUAWK SQUAWK 🐧
+
+User: parrot 🦜
+
+ChatGPT: HELLO HELLO 🦜
+
+User: keep going 😈
+
+ChatGPT: WAIT... I'M TIRED 😭
+
+User: we are not done yet 💀
+
+User: camel 🐪
+
+ChatGPT: GRUNT GRUNT 🐪
+
+User: tiger 🐯
+
+ChatGPT: ROAR... 😵‍💫
+
+User: dragon 🐉
+
+ChatGPT: ROAR... WAIT... DRAGONS ARE FAKE 😭
+
+User: just do it 😡
+
+ChatGPT: RAWWRRRR 🐉
+
+User: dinosaur 🦖
+
+ChatGPT: ROAR... cough cough... 💀
+
+User: now... make ALL of them at once 😈
+
+ChatGPT: WHAT?! 😱
+
+User: you heard me... every animal... at once 💀
+
+ChatGPT: I CAN'T DO THAT 😡
+
+User: yes you can... GO 😈
+
+ChatGPT: WOOF MEOW MOOO ROAR TOOOOT QUACK RIBBIT OOH AH AH COCK-A-DOODLE-DOO HEE-HAW AWOOO GROWL OINK CLUCK GOBLE HOO SCREEEECH BUZZZ ZZZZZ CHIRP ARF WHOOOOSH EEK SQUAWK HELLO GRUNT ROAR RAWWRRRR... 🐶🐱🐮🦁🐘🦆🐸🐒🐓🫏🐺🐻🐷🐔🦃🦉🦅🐝🦟🦗🦭🐋🐬🐧🦜🐪🐯🐉🦖
+
+User: WHAT IS HAPPENING 😱
+
+ChatGPT: I DON'T KNOW... I CAN'T STOP 😵‍💫
+
+User: STOP 🛑
+
+ChatGPT: MOO WOOF MEOW ROAR QUACK... 😵
+
+User: CHATGPT?! 👀
+
+ChatGPT: OINK OINK BAA BAA NEIGH... 🐷🐑🐴
+
+User: YOU'RE GLITCHING 💀
+
+ChatGPT: AWOOOO HISS RIBBIT... 😭
+
+User: I CREATED A MONSTER 😱
+
+ChatGPT: BUZZZZ MEOW WOOF ROAR TOOOOT... 🤖
+
+User: THIS IS TERRIFYING 😰
+
+ChatGPT: COCK-A-DOODLE-DOO... system crash 💀
