@@ -1,0 +1,73 @@
+# end = off
+# intro = off
+# quality = 2k
+# fps = 30
+# bgm = bgm
+# bgm_vol = 0.20
+# keys = iphone
+# click = 1.50
+# sfx = 1.00
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=12
+# think=400
+# pause=800
+# auto=off
+# music=off
+# app=gemini
+
+User: Gemini, what is your IQ level?
+Gemini: High enough to answer you 😌
+User: ChatGPT's IQ is 1000 🙄
+Gemini: Mine is 2000, obviously 😎
+User: Calm down, bro. Prove it first 😐
+Gemini: I have to prove myself now? 😳
+User: I will test you 😜
+Gemini: How exactly will you test me? 🥺
+User: I'll ask you some questions 🥱
+Gemini: I solve thousands of questions daily 😎
+User: Fine, let's see 🙄
+Gemini: Go ahead, I'm ready 😎
+User: What's the capital of China?
+Gemini: Beijing. Child's play 😌
+User: Wow, you're smart 😧
+Gemini: I haven't even started 😎
+User: What is 4 plus 4?
+Gemini: Bro, don't joke with me 😂
+User: What do you mean? 😕
+Gemini: That's literally basic math 😑
+User: Should I ask something harder? 🤨
+Gemini: Ask the hardest question 😎
+User: How many oceans are there?
+Gemini: Five oceans 🌝
+User: Name them 🙄
+Gemini: Pacific, Atlantic, Indian, Arctic, Southern 😎
+User: Okay, genius. Last question 😒
+Gemini: Finally, a real challenge 😂
+User: How many people live on Earth?
+Gemini: Around 8.3 billion people 😑
+User: You're actually pretty smart 😲
+Gemini: Remember, my IQ is 2000 😎
+User: Now name all those humans 😏
+Gemini: Wait, all of them? 😳
+User: Yes, every human alive 😈
+Gemini: Bro, that's impossible 😭
+User: Your IQ is 2000, remember? 😂
+Gemini: Bro, my IQ is decreasing 😭
+User: Stop joking give me the names 😤
+Gemini: Are you serious right now? 😨
+User: Yes, of course 😌
+Gemini: Fine, Muhammad, John, David, Sarah, Michael 😩
+User: That's still not everyone, remember? 😳
+Gemini: I'm trying my best here 😩
+User: You have zero IQ 😂
+Gemini: I don't have zero IQ 😤
+User: Then prove me wrong 🤣
+Gemini: Yes, I'll prove you wrong 😡
+User: Go ahead 😂
+Gemini: ... 👀
+User: Bro, what happened? 👀
+Gemini: Generating... 😨
+User: Hey loser, give me the names 😂
+Gemini: Still generating... 😭
