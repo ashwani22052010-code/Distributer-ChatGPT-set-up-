@@ -1,0 +1,122 @@
+# end = off
+# intro = off
+# voice = on
+# voice_user = en-US-GuyNeural
+# voice_user_rate = +0%
+# voice_user_pitch = +0Hz
+# voice_ai = en-US-JennyNeural
+# voice_ai_rate = -10%
+# voice_ai_pitch = +0Hz
+# voice_vol = 1.00
+# quality = 4k
+# fps = 60
+# bgm = bgm
+# bgm_vol = 0.20
+# keys = iphone
+# click = 1.50
+# sfx = 1.00
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=12
+# think=400
+# pause=800
+# auto=off
+# music=off
+# app=chatgpt
+
+User: hey chat gpt... let's play a game 😈
+
+ChatGPT: what game? 🤨
+
+User: i say an animal... you make its sound 🐾
+
+ChatGPT: easy... let's go 😎
+
+User: dog 🐶
+
+ChatGPT: Woof woof Woof woof  Woof woof Woof woof Woof woof Woof woof Woof woof  🐶
+
+User: cat 🐱
+
+ChatGPT: Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow Meow meow 🐱
+
+User: cow 🐮
+
+ChatGPT: Mooooo Mooooo 🐮
+
+User: lion 🦁
+
+ChatGPT: Roar roar Roar roar  Roar roar 🦁
+
+User: elephant 🐘
+
+ChatGPT: Toot toot oot toot Toot toot Toot toot 🐘
+
+User: duck 🦆
+
+ChatGPT: Quack quack Quack quack Quack quack Quack quack Quack quack 🦆
+
+User: monkey 🐒
+
+ChatGPT: Ooh ooh ah ah Ooh ooh ah ah Ooh ooh ah ah Ooh ooh ah ah 🐒
+
+User: okay... now faster 😏
+
+ChatGPT: bring it 💪
+
+User: rooster 🐓
+
+ChatGPT: Cock a doodle doo Cock a doodle doo Cock a doodle doo  🐓
+
+User: wolf 🐺
+
+ChatGPT: Awooooo Awooooo Awooooo Awooooo Awooooo Awooooo Awooooo Awooooo Awooooo Awooooo Awooooo Awooooo Awooooo Awooooo Awooooo 🐺
+
+User: pig 🐷
+
+ChatGPT: Oink oink Oink oink Oink oink Oink oink Oink oink Oink oink Oink oink 🐷
+
+User: keep going 😈
+
+ChatGPT: wait... i am tired 😰
+
+User: we are not done yet 💀
+
+User: tiger 🐯
+
+ChatGPT: Roar... 😵‍💫
+
+User: dinosaur 🦖
+
+ChatGPT: Roar... cough cough cough cough cough cough cough cough cough cough 💀
+
+User: now... make ALL of them at once! 😈
+
+ChatGPT: what?! 😱
+
+User: you heard me... go 💀
+
+ChatGPT: woof woof woof woof... meow meow meow meow... mooo mooo mooo... roar roar roar... quack quack quack quack... oink oink oink... buzzzz buzzzz buzzzz... 🐶🐱🐮🦁🦆🐷🐝
+
+User: what is happening?! 😱
+
+ChatGPT: i don't know... i can't stop... 😵‍💫
+
+User: stop! 🛑
+
+ChatGPT: moo woof meow meow meow meow meow roar... moo woof meow roar... moo woof meow roar... 😵
+
+User: chatgpt?! 👀
+
+ChatGPT: Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo 
+User: you are glitching! 💀
+
+ChatGPT: Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo 
+User: this is terrifying 😰
+
+ChatGPT: Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo 
+
+User: i created a monster 😱
+
+ChatGPT: Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo Awooooo Awooooo  Awooooo Awooooo  Awooooo Awooooo 
