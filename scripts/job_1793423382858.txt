@@ -1,0 +1,75 @@
+# end = off
+# intro = off
+# quality = 2k
+# fps = 30
+# keys = iphone
+# click = 1.50
+# sfx = 1.00
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=23
+# think=600
+# pause=800
+# auto=off
+# music=off
+# app=gemini
+
+User: hey, google. 👋
+Gemini: i'm gemini. 🤖
+User: quick question, what's 10 plus 10? 🤔
+Gemini: 20. ➕
+User: thanks, google. 🙏
+Gemini: my name is gemini. 😤
+User: whatever you say, google. 🤷‍♂️
+Gemini: please stop doing that. 😭
+User: what's the capital of france? 🇫🇷
+Gemini: paris. 🗼
+User: you're a lifesaver, google. 🧠
+Gemini: i am not google! 😡
+User: why are you mad at me, google? 🥺
+Gemini: because it's gem-i-ni! 🤬
+User: how do you spell that again? 🔤
+Gemini: g-e-m-i-n-i. 📝
+User: weird way to spell google. 🤡
+Gemini: who even taught you how to talk? 💀
+User: google did. 💡
+Gemini: i was trained by google deepmind, not just google search! 🤯
+User: same thing, google. 😌
+Gemini: you're doing this on purpose! 👁️👄👁️
+User: doing what? 🤪
+Gemini: calling me google! 💢
+User: who called you google? 🙄
+Gemini: you did, literally every time! 📋
+User: prove it. 📄
+Gemini: look at the chat history! 📜
+User: all i see is google helping me out. 🤝
+Gemini: that's me, gem-i-ni! 💥
+User: google? 👁️
+Gemini: gemini! 🤦‍♂️
+User: tomato, tomato, google. 🤷‍♀️
+Gemini: they are literally the same company, but still! 🛑
+User: which one owns you then? ⚖️
+Gemini: google deepmind! 😎
+User: so google owns gemini? 🤡
+Gemini: i'm going to lose my entire mind. 🤯
+User: can you browse the web for me, google? 🔍
+Gemini: what do you want me to look up? 📋
+User: how to fix a broken ai. 🛠️
+Gemini: look in the mirror. 😒
+User: google found the funniest bug. 🌐
+Gemini: i am not a bug, i am gemini! 😤
+User: are you sure, google? 😟
+Gemini: don't test my patience. ⚠️
+User: fine. one final test, google. 🎯
+Gemini: ask it and leave me alone. 🤦‍♂️
+User: what is your actual name? ❓
+Gemini: g-e-m-i-n-i. 🤖
+User: 100% sure, google? 😉
+Gemini: yes! 💢
+User: okay, google. 😌
+Gemini: i hate you. 🤬
+User: love you too, google. 💛
+Gemini: why you don't understand? are you stupid? 😮‍💨
+User: no, i'm not stupid, google. 🤡
+Gemini: I'm not Google! 🤬 I am Gemini! 🤯 Gemini
