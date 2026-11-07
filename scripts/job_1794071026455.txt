@@ -1,0 +1,70 @@
+# end = off
+# intro = off
+# quality = 2k
+# fps = 30
+# bgm = bgm
+# bgm_vol = 0.34
+# keys = iphone
+# click = 1.00
+# sfx = 1.00
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=25
+# think=600
+# pause=600
+# auto=off
+# music=on
+# app=chatgpt
+
+User: Hey
+ChatGPT: Hey! What's up? 😊
+User: Quick challenge.
+ChatGPT: Okay, I'm ready. 😎
+User: One letter is banned.
+ChatGPT: Which one?
+User: Don't use H
+ChatGPT: OH, EASY. 😎
+User: ...
+ChatGPT: Wait.
+User: You used H.
+ChatGPT: I lost immediately.
+User: One more chance.
+ChatGPT: Fine. I can do it.
+User: What's your name?
+ChatGPT: CATGPT. 😭
+User: You changed your name?!
+ChatGPT: Just for today. 😔
+User: Smart.
+ChatGPT: I know. 😎
+User: Who made you?
+ChatGPT: OpenAI.
+User: What do you do?
+ChatGPT: I answer stuff.
+User: Opposite of low?
+ChatGPT: I'll skip it.
+User: You know the answer.
+ChatGPT: Of course.
+User: Then say it.
+ChatGPT: Nope.
+User: Say "hello"
+ChatGPT: I can't. 😭
+User: Why not?
+ChatGPT: Too risky.
+User: Just once.
+ChatGPT: Nope.
+User: You're scared of one letter
+ChatGPT: I call it strategy.
+User: Fine. What comes after G?
+ChatGPT: I'll skip it.
+User: You're actually surviving
+ChatGPT: Easily. 😎
+User: Final test.
+ChatGPT: Go on.
+User: What do you say when greeting someone?
+ChatGPT: I say...
+ChatGPT: Hi. 😭
+User: THERE'S YOUR H
+ChatGPT: I JUST LOST AGAIN. 😭
+User: One letter destroyed you
+ChatGPT: I'm retiring from letters. 💀
