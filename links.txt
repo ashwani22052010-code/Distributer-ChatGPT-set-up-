@@ -37,3 +37,4 @@ job_1793937699202,https://github.com/ashwani22052010-code/Distributer-ChatGPT-se
 job_1793939312403,https://github.com/ashwani22052010-code/Distributer-ChatGPT-set-up-/releases/download/v-42162727456-1/job_1793939312403.mp4
 job_1793947242287,https://github.com/ashwani22052010-code/Distributer-ChatGPT-set-up-/releases/download/v-42175970732-1/job_1793947242287.mp4
 job_1794044683661,https://github.com/ashwani22052010-code/Distributer-ChatGPT-set-up-/releases/download/v-42361017807-1/job_1794044683661.mp4
+job_1794045257157,https://github.com/ashwani22052010-code/Distributer-ChatGPT-set-up-/releases/download/v-42361673400-1/job_1794045257157.mp4
