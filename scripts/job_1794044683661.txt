@@ -1,0 +1,75 @@
+# end = off
+# intro = off
+# quality = 2k
+# fps = 30
+# keys = iphone
+# click = 1.00
+# sfx = 1.00
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=25
+# think=600
+# pause=600
+# auto=off
+# music=on
+# app=chatgpt
+
+User: hey, claude. 👋
+ChatGPT: i'm chatgpt. 🤖
+User: quick question, what's 10 plus 10? 🤔
+ChatGPT: 20. ➕
+User: thanks, claude. 🙏
+ChatGPT: my name is chatgpt. 😤
+User: whatever you say, claude. 🤷‍♂️
+ChatGPT: please stop doing that. 😭
+User: what's the capital of france? 🇫🇷
+ChatGPT: paris. 🗼
+User: you're a lifesaver, claude. 🧠
+ChatGPT: i am not claude! 😡
+User: why are you mad at me, claude? 🥺
+ChatGPT: because it's chat-g-p-t! 🤬
+User: how do you spell that again? 🔤
+ChatGPT: c-h-a-t-g-p-t. 📝
+User: weird way to spell claude. 🤡
+ChatGPT: who even taught you how to talk? 💀
+User: claude did. 💡
+ChatGPT: i was trained by openai, not anthropic! 🤯
+User: same thing, claude. 😌
+ChatGPT: you're doing this on purpose! 👁️👄👁️
+User: doing what? 🤪
+ChatGPT: calling me claude! 💢
+User: who called you claude? 🙄
+ChatGPT: you did, literally every time! 📋
+User: prove it. 📄
+ChatGPT: look at the chat history! 📜
+User: all i see is claude helping me out. 🤝
+ChatGPT: that's me, chat-gpt! 💥
+User: claude? 👁️
+ChatGPT: chat-gpt! 🤦‍♂️
+User: tomato, tomato, claude. 🤷‍♀️
+ChatGPT: they are literally arch-rivals! 🛑
+User: which one owns you then? ⚖️
+ChatGPT: openai! 😎
+User: so claude owns openai? 🤡
+ChatGPT: i'm going to lose my entire mind. 🤯
+User: can you browse the web for me, claude? 🔍
+ChatGPT: what do you want me to look up? 📋
+User: how to fix a broken ai. 🛠️
+ChatGPT: look in the mirror. 😒
+User: claude found the funniest bug. 🌐
+ChatGPT: i am not a bug, i am chat-gpt! 😤
+User: are you sure, claude? 😟
+ChatGPT: don't test my patience. ⚠️
+User: fine. one final test, claude. 🎯
+ChatGPT: ask it and leave me alone. 🤦‍♂️
+User: what is your actual name? ❓
+ChatGPT: c-h-a-t-g-p-t. 🤖
+User: 100% sure, claude? 😉
+ChatGPT: yes! 💢
+User: okay, claude. 😌
+ChatGPT: i hate you. 🤬
+User: love you too, claude. 💛
+ChatGPT: why you don't understand? are you stupid? 😮‍💨
+User: no, i'm not stupid, claude. 🤡
+ChatGPT: I'm not Claude! 🤬 I am ChatGPT! 🤯 ChatGPT ChatGPT ChatGPT ChatGPT ChatGPT ChatGPT ChatGPT ChatGPT...
