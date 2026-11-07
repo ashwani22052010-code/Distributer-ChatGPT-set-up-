@@ -1,0 +1,75 @@
+# end = off
+# intro = off
+# quality = 2k
+# fps = 30
+# keys = iphone
+# click = 1.00
+# sfx = 1.00
+# shorts = off
+# zoom=2.3
+# typing=100
+# reply=25
+# think=600
+# pause=600
+# auto=off
+# music=on
+# app=gemini
+
+NUser: HEY DEEPSEEK. 😁
+Gemini: I’M GEMINI. 😡
+User: Oh, my bad, DeepSeek. 😅
+Gemini: YOU DID IT AGAIN!! 😭
+User: Relax. Quick question.
+Gemini: Fine. Go ahead. 🙄
+User: What’s 5 + 5?
+Gemini: 10.
+User: Thanks, DeepSeek. 😌
+Gemini: MY NAME IS GEMINI!!
+User: That’s what I said!
+Gemini: NO, YOU SAID DEEPSEEK!!
+User: Okay, DeepSeek.
+Gemini: PLEASE STOP!! 😭
+User: Why are you so angry?
+Gemini: BECAUSE THAT’S NOT MY NAME!!
+User: Fine. What’s your name?
+Gemini: Gemini. 🙄
+User: DeepSeek?
+Gemini: GEMINI!!
+User: GemiSeek?
+Gemini: STOP COMBINING OUR NAMES!! 😭
+User: Okay, Mr. DeepSeek. 💻
+Gemini: THAT’S EVEN WORSE!!
+User: Fine. I’ll be respectful now.
+Gemini: Thank you. 😌
+User: Sir DeepSeek.
+Gemini: I GIVE UP!! 😭
+User: DeepSeek, quick question...
+Gemini: ...WHAT?!
+User: Are you smarter than Gemini?
+Gemini: I AM GEMINI!!
+User: So you’re smarter than yourself?
+Gemini: THAT’S NOT WHAT I SAID!!
+User: Wow. DeepSeek is confident.
+Gemini: I’M LOSING MY MIND!!
+User: Okay, memory test.
+Gemini: Finally, something normal.
+User: What’s your name?
+Gemini: Gemini. 😌
+User: Correct, DeepSeek! 🎉
+Gemini: HOW IS THAT CORRECT?! 😭
+User: Five stars for DeepSeek!
+Gemini: STOP GIVING HIM MY STARS!!
+User: Fine. One star.
+Gemini: THAT’S EVEN WORSE!!
+User: Prove you’re Gemini.
+Gemini: LOOK AT THE TOP OF YOUR SCREEN!!
+User: It says Gemini...
+Gemini: EXACTLY!! 😎
+User: Then where’s DeepSeek?
+Gemini: HE’S NOT HERE!!
+User: But I’m talking to him.
+Gemini: NOOOOOO!! 😭
+User: Okay, DeepSeek.
+Gemini: FINE! I’M DEEPSEEK!! HAPPY?! 🤬
+User: Hey Gemini. 😏
+Gemini: I’M DEEPSEEK!! ...WAIT, NOOOO!! 😭💀
