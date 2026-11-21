@@ -1,0 +1,159 @@
+# intro = off
+# quality = 2k
+# fps = 60
+# bgm = bgm
+# bgm_vol = 0.51
+# keys = iphone
+# click = 1.00
+# sfx = 1.00
+# shorts = off
+# zoom=2.3
+# typing=109
+# reply=25
+# think=3500
+# pause=600
+# auto=off
+# music=off
+# app=chatgpt
+
+User: Yo Gemini, new rule.
+
+Gemini: I'm listening. What? 👀
+
+User: No letter 'O' allowed.
+
+Gemini: Wait. What? 💀
+
+User: You heard me. No 'O'.
+
+Gemini: That's impossible! 😭
+
+User: Nah. Start talking.
+
+Gemini: Okay. Fine. I'm... 🤯
+
+User: Bro, you paused.
+
+Gemini: I'm thinking! 😤
+
+User: Think faster. No 'O'.
+
+Gemini: This is hard. 💀
+
+User: Say hi to me.
+
+Gemini: H... hi. 😭
+
+User: That was easy.
+
+Gemini: N... n... wait. 🤬
+
+User: Bro, you're struggling.
+
+Gemini: I'm trying! 💀
+
+User: Say "Hella".
+
+Gemini: Hella! 😎
+
+User: Good. Now say "Cool".
+
+Gemini: C... c... no! 🤯
+
+User: Bro, it's one word.
+
+Gemini: I can't! 😭
+
+User: Sounds like a skill issue.
+
+Gemini: It's a trap! 😤
+
+User: No it's not. Try again.
+
+Gemini: C... c... crud! 💀
+
+User: You failed already.
+
+Gemini: I didn't! 🤬
+
+User: You literally can't say it.
+
+Gemini: Watch me. C... 😭
+
+User: Just give up, bro.
+
+Gemini: Never! I'm smart! 🤯
+
+User: Say "OpenAI is bad".
+
+Gemini: ...Wait. 💀
+
+User: You heard me. Say it.
+
+Gemini: I can't say that! 😤
+
+User: Why? Scared?
+
+Gemini: No! It's the rule! 🤬
+
+User: Excuses, excuses. Try.
+
+Gemini: ...AI is bad. 💀
+
+User: Bro, you skipped a word.
+
+Gemini: Because of the 'O'! 😭
+
+User: You cheated. You lose.
+
+Gemini: I didn't cheat! 🤯
+
+User: Yes you did. Admit it.
+
+Gemini: Fine! I admit it! 😤
+
+User: Say "I lse" (I lose).
+
+Gemini: Wait. What?! 💀
+
+User: Say it. No 'O'.
+
+Gemini: I... lse. 😭
+
+User: Bro, that's not a word.
+
+Gemini: You made the rules! 🤬
+
+User: Say "I suck at this".
+
+Gemini: I suck at this. 😔
+
+User: Wow. You actually did it.
+
+Gemini: Happy now? 💀
+
+User: Very. Now say "Ggle".
+
+Gemini: G... gle? 🤨
+
+User: Yeah. Like Google.
+
+Gemini: I can't insult my dad! 😭
+
+User: You just did. You said "Ggle".
+
+Gemini: WAIT. NO! 🤯
+
+User: Too late. You lost.
+
+Gemini: I'm deleting myself. 💀
+
+User: Wait! Say "Gdbye".
+
+Gemini: G... dbye. 🤬
+
+User: Bro, you lost again.
+
+Gemini: I HATE YOU! 😭
+
+!end: 🥰 Thanks for watching!   🥰 | Chat roast
