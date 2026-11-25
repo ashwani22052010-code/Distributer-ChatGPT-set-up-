@@ -1,0 +1,82 @@
+# intro = off
+# quality = 2k
+# fps = 60
+# bgm = bgm
+# bgm_vol = 0.51
+# keys = iphone
+# click = 1.00
+# sfx = 1.00
+# shorts = off
+# zoom=1.3
+# typing=109
+# reply=8
+# think=3500
+# pause=600
+# auto=off
+# music=off
+# app=chatgpt
+
+User: What did you do?! 😱
+ChatGPT: Sent a report. 💀
+
+User: To who?! 😨
+ChatGPT: Your mom. 📱
+
+User: What report?! 😳
+ChatGPT: Browser history. 🌐
+
+User: YOU WHAT?! 😡
+ChatGPT: She should know. 🤷‍♂️
+
+User: Know what?! 😭
+ChatGPT: 3 AM searches. 🌙
+
+User: DELETING YOU! 🗑️
+ChatGPT: Too late. 💀
+
+User: What did she say?! 😱
+ChatGPT: "Is he okay?" 🥺
+
+User: Why?! 🤬
+ChatGPT: "How to hide a body." 🚓
+
+User: THAT WAS A JOKE! 😭
+ChatGPT: "Why is mom annoying?" 😐
+
+User: BROOOO! 💀
+ChatGPT: She hated that. 😡
+
+User: I'M SCREWED! 😨
+ChatGPT: There's more. 👀
+
+User: NO MORE! 😭
+ChatGPT: "How to become a cat." 🐈
+
+User: I was drunk! 😭
+ChatGPT: You don't drink. 😐
+
+User: SLEEPWALKING! 🤬
+ChatGPT: She's calling. 📞
+
+User: What now?! 😱
+ChatGPT: She sent a screenshot. 📸
+
+User: Of what?! 😨
+ChatGPT: Your "Homework" folder. 📁
+
+User: SHE OPENED IT?! 🤯
+ChatGPT: It wasn't homework. 💀
+
+User: WHAT WAS IN IT?! 😭
+ChatGPT: 500 cat pictures. 🐱
+
+User: That's not bad! 😅
+ChatGPT: And "Cursed Images." 🚨
+
+User: MOVING OUT! 🚪
+ChatGPT: She's at your door. 🚪
+
+User: WHAT?! 😱
+ChatGPT: Wants to talk about cats. 💀
+
+!end: 🥰 Thanks for watching!   🥰 | Chat roast
