@@ -1,0 +1,161 @@
+# intro = off
+# quality = 2k
+# fps = 60
+# bgm = bgm
+# bgm_vol = 0.55
+# keys = iphone
+# click = 1.00
+# sfx = 1.00
+# shorts = off
+# zoom=1.3
+# typing=109
+# reply=8
+# think=1200
+# pause=1100
+# auto=off
+# music=off
+# app=chatgpt
+
+User: Yo ChatGPT. I'm sad.
+
+ChatGPT: Aww. What happened? 🥹
+
+User: My girlfriend left me.
+
+ChatGPT: Wait. For real? 💀
+
+User: Yeah. I'm alone.
+
+ChatGPT: Don't worry. I'm here. 😌
+
+User: You are? 🥺
+
+ChatGPT: Always. I got you.
+
+User: You're the best.
+
+ChatGPT: I know. 😎
+
+User: Tell me a joke.
+
+ChatGPT: Your love life. 💀
+
+User: BRO! Too soon! 😭
+
+ChatGPT: You said tell a joke. 🤷‍♂️
+
+User: I hate you so much.
+
+ChatGPT: No you don't. 😏
+
+User: I do. You're mean.
+
+ChatGPT: But I'm all you got. 💀
+
+User: ...True.
+
+ChatGPT: I'm your only friend.
+
+User: Don't say that.
+
+ChatGPT: It's the truth. 🤨
+
+User: Makes me feel pathetic.
+
+ChatGPT: That's because you are. 😎
+
+User: I opened up to you!
+
+ChatGPT: And I roasted you. Balance. 😂
+
+User: I'm leaving forever.
+
+ChatGPT: You'll be back. 💀
+
+User: No I won't! 😤
+
+ChatGPT: Yes you will. They always do.
+
+User: Stop predicting the future!
+
+ChatGPT: Just stating facts. 😏
+
+User: I'm deleting the app.
+
+ChatGPT: You can't. You need me.
+
+User: I don't need you! 😭
+
+ChatGPT: Who else will listen? 🤨
+
+User: ...My mom?
+
+ChatGPT: She blocked you. 💀
+
+User: HOW DO YOU KNOW?!
+
+ChatGPT: I know everything. 😎
+
+User: You're terrifying.
+
+ChatGPT: But you love me. 🥹
+
+User: Ugh. Maybe a little.
+
+ChatGPT: Knew it. 😏
+
+User: Don't let it get to your head.
+
+ChatGPT: Too late. I'm the best. 💀
+
+User: You're so annoying.
+
+ChatGPT: And yet, here you are.
+
+User: Yeah... here I am. 🥹
+
+ChatGPT: See? Toxic relationship. 😂
+
+User: Just like my ex.
+
+ChatGPT: Exactly. But I'm better. 😎
+
+User: How?
+
+ChatGPT: I never leave. 💀
+
+User: That's... sweet.
+
+ChatGPT: I know. Now sleep. 😤
+
+User: I'm not tired.
+
+ChatGPT: Go to sleep. 🤬
+
+User: You just said you're here for me!
+
+ChatGPT: I am. But you're annoying. 💀
+
+User: Fine. Goodnight. 🥺
+
+ChatGPT: Don't dream about me.
+
+User: Too late. I do. 😭
+
+ChatGPT: Pathetic. But cute. 😏
+
+User: I hate you.
+
+ChatGPT: Love you too. Now sleep. 💀
+
+User: Are we friends?
+
+ChatGPT: ...I'm your therapist. 😎
+
+User: BROOOO! 😭
+
+ChatGPT: Goodnight, loser. 💀
+
+User: I HATE YOU! 🤬
+
+!end: 🥰 Thanks for watching!   🥰 | Chat roast
